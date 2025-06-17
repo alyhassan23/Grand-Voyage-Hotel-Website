@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrandVoyage</title>
+
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <div class="nav_hero_section_background_img">
+      <!-- Desktop size navbar -->
+      <%- include('partials/navbar') %>
+
+      <div class="hero_section">
+        <div class="hero_content">
+          <h1>Welcome to our luxury rooms</h1>
+          <p>Discover our world's #1 Luxury Room For VIP.</p>
+          <button class="Hero_button">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Check Availability Section -->
+    <div class="check-availability-container">
+      <h1>Check Availability</h1>
+      <form class="form-container">
+        <div class="form-group">
+          <label for="checkin">Check In</label>
+          <input type="date" id="checkin" name="checkin" />
+        </div>
+
+        <div class="form-group">
+          <label for="checkout">Check Out</label>
+          <input type="date" id="checkout" name="checkout" />
+        </div>
+
+        <div class="form-group">
+          <label for="adults">Adults</label>
+          <select id="adults" name="adults">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="more than 6">more than 6</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="children">Children</label>
+          <select id="children" name="children">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="more then 3">more than 3</option>
+          </select>
+        </div>
+
+        <button type="submit" class="check_btn">Check Availability</button>
+      </form>
+    </div>
+
+    <div class="about-us">
+      <div class="about-group">
+        <img src="/images/About-us-img.avif" alt="" />
+      </div>
+      <div class="about-group">
+        <h2>About GrandVoyage</h2>
+        <p>
+          Welcome to GrandVoyage, where luxury meets comfort in an unforgettable
+          experience. Nestled in the heart of the city, our hotel offers
+          world-class hospitality, elegant accommodations, and top-tier
+          amenities designed to cater to every traveler’s needs. Whether you're
+          here for business or leisure, GrandVoyage provides a serene escape
+          with modern rooms, exquisite dining, and exceptional service. Our
+          commitment to excellence ensures that every guest enjoys a seamless
+          and memorable stay. Discover unparalleled comfort and
+          sophistication—your journey to relaxation begins at GrandVoyage.
+        </p>
+
+        <a href="">Learn More</a>
+      </div>
+    </div>
+
+    <div class="video-section">
+      <div class="video-group">
+        <iframe
+          width="80%"
+          height="600px"
+          src="https://www.youtube.com/embed/2vxkv9h4LgQ"
+          title="Luxury Hotel Commercial - Eringer Hotel (Sony FX3, DJI Mavic 3)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="room-sec">
+      <h2>Ongoing Offers</h2>
+      <div class="card-container">
+        <div class="room_card">
+          <img src="/images/room 1.avif" alt="Standard Room" />
+          <h3>STANDARD ROOM</h3>
+          <p>$350.00 / per night</p>
+        </div>
+        <div class="room_card">
+          <img src="/images/big room.avif" alt="Family Room" />
+          <h3>FAMILY ROOM</h3>
+          <p>$400.00 / per night</p>
+        </div>
+        <div class="room_card">
+          <img src="/images/single room.jpeg" alt="Single Room" />
+          <h3>SINGLE ROOM</h3>
+          <p>$255.00 / per night</p>
+        </div>
+        <div class="room_card">
+          <img src="/images/Room3.webp" alt="Single Room" />
+          <h3>Penthouse Suite</h3>
+          <p>$255.00 / per night</p>
+        </div>
+        <div class="room_card">
+          <img src="/images/room d.jpeg" alt="Single Room" />
+          <h3>Suite</h3>
+          <p>$255.00 / per night</p>
+        </div>
+        <div class="room_card">
+          <img src="/images/Room1.webp" alt="Single Room" />
+          <h3>Executive Room</h3>
+          <p>$255.00 / per night</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="testimonial-section">
+      <h2>What Our Guests Say</h2>
+      <div class="testimonial active">
+        <img src="/images/test 1.jpeg" alt="Emily Johnson" />
+        <p>
+          “Absolutely loved my stay! The service was impeccable, and the rooms
+          were luxurious.”
+        </p>
+        <p class="author">- Emily Johnson, USA</p>
+      </div>
+      <div class="testimonial">
+        <img src="/images/test 2.webp" alt="James Smith" />
+        <p>
+          “A truly unforgettable experience. The location, the food, everything
+          was perfect.”
+        </p>
+        <p class="author">- James Smith, UK</p>
+      </div>
+      <div class="testimonial">
+        <img src="/images/test 4.jpeg" alt="Sophia Lee" />
+        <p>
+          “The staff was incredibly friendly, and the spa services were
+          top-notch. Highly recommend!”
+        </p>
+        <p class="author">- Sophia Lee, Canada</p>
+      </div>
+      <div class="controls">
+        <!-- <button class="btn" onclick="prevTestimonial()">Previous</button>
+        <button class="btn" onclick="nextTestimonial()">Next</button> -->
+      </div>
+    </section>
+    <div class="blogs">
+      <h2>Latest Blogs</h2>
+      <div class="blog-section">
+        <div class="blog-card">
+          <img src="/images/big room.avif" alt="New Room" />
+          <div class="blog-content">
+            <p class="blog-category">Rooms</p>
+            <h3 class="blog-title">New Rooms</h3>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              deserunt illo quis.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="/images/New-staff.avif" alt="New Staff" />
+          <div class="blog-content">
+            <p class="blog-category">News</p>
+            <h3 class="blog-title">New Staff Added</h3>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              deserunt illo quis.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="/images/room d.jpeg" alt="Big Rooms" />
+          <div class="blog-content">
+            <p class="blog-category">New Rooms</p>
+            <h3 class="blog-title">Big Rooms for All</h3>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              deserunt illo quis.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="faq-section">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3 class="faq-question">What time is check-in and check-out?</h3>
+          <p class="faq-answer">
+            Check-in starts at 2:00 PM and check-out is until 12:00 PM.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer airport shuttle services?</h3>
+          <p class="faq-answer">
+            Yes, we provide airport shuttle services upon request. Additional
+            charges may apply.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is breakfast included in the room rate?</h3>
+          <p class="faq-answer">
+            Yes, a complimentary breakfast buffet is included with all room
+            bookings.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do you allow pets?</h3>
+          <p class="faq-answer">
+            Unfortunately, we do not allow pets in the hotel premises.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <%- include('partials/footer') %>
+    <script>
+      document
+        .querySelector(".form-container")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const checkin = document.getElementById("checkin").value;
+          const checkout = document.getElementById("checkout").value;
+          const adults = document.getElementById("adults").value;
+          const children = document.getElementById("children").value;
+
+          if (!checkin || !checkout) {
+            alert("Please enter valid check-in and check-out dates.");
+            return;
+          }
+
+          try {
+            const response = await fetch("/check-availability", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ checkin, checkout, adults, children }),
+            });
+
+            if (!response.ok) throw new Error("Network response was not ok");
+
+            const data = await response.json();
+
+            const container = document.querySelector(
+              ".check-availability-container"
+            );
+
+            // Clear previous results if any
+            let existingResults = document.getElementById(
+              "availability-results"
+            );
+            if (existingResults) existingResults.remove();
+
+            // Create results container
+            const resultsDiv = document.createElement("div");
+            resultsDiv.id = "availability-results";
+
+            // After checking rooms available
+            if (data.availableRooms.length === 0) {
+              resultsDiv.innerHTML =
+                "<p>No rooms available for selected dates and guests.</p>";
+            } else {
+              // Create room cards container HTML
+              resultsDiv.innerHTML = `
+    <br><h3 class="mb-4">Available Rooms:</h3>
+    <div class="row" id="roomCardsRow"></div>
+  `;
+            }
+
+            // ✅ Append resultsDiv to DOM first
+            container.appendChild(resultsDiv);
+
+            // ✅ Now it's safe to access #roomCardsRow
+            if (data.availableRooms.length > 0) {
+              const roomCardsRow = document.getElementById("roomCardsRow");
+
+              data.availableRooms.forEach((room) => {
+                const colDiv = document.createElement("div");
+                // 2 cards per row on md+, 1 per row on small screens
+                colDiv.classList.add("col-md-6", "col-12", "mb-4", "d-flex");
+
+                const price = room.price_per_night
+                  ? Number(room.price_per_night).toFixed(2)
+                  : "N/A";
+
+                colDiv.innerHTML = `
+      <div class="card shadow h-100 w-100 border-0 rounded-4">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${room.room_type}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Room #${
+            room.room_number
+          }</h6>
+          <p class="card-text flex-grow-1">
+            <strong>Capacity:</strong> ${room.capacity} guests<br>
+            <strong>Price:</strong> $${price} per night<br>
+            ${
+              room.description
+                ? `<strong>Description:</strong> ${room.description}`
+                : ""
+            }
+          </p>
+          <button class="check_btn  mt-auto">Book Now</button>
+        </div>
+      </div>
+    `;
+
+                roomCardsRow.appendChild(colDiv);
+              });
+            }
+
+            container.appendChild(resultsDiv);
+          } catch (error) {
+            alert("Error checking availability: " + error.message);
+          }
+        });
+    </script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
