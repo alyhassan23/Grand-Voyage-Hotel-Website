@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Fav/site.webmanifest" />
+    <link rel="stylesheet" href="/styles/Admin_login.css" />
+  </head>
+  <body>
+    <div class="login-sec">
+      <div class="login-img">
+        <img src="/Fav/favicon.ico" alt="Logo" />
+        <h1>GrandVoyage</h1>
+        <p>Admin Dashboard</p>
+      </div>
+      <div class="login-form">
+        <div class="login-container">
+          <h2>Admin Login</h2>
+
+          <% if (error) { %>
+          <p style="color: red"><%= error %></p>
+          <% } %>
+
+          <form action="/admin/login" method="POST">
+            <label for="username">Username</label>
+            <input
+              type="email"
+              name="username"
+              id="username"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

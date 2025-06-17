@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GrandVoyage Hotel Feedback Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/Feedback.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="/web engineering project/Fav/favicon.ico"
+            alt="GV Logo"
+            width="30"
+            height="30"
+            class="me-2"
+          />
+          GrandVoyage
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/feedback">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contact">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/login">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="container mt-5">
+      <div class="p-5 text-center hero rounded-4">
+        <h1 class="display-5 fw-bold">Your Experience Matters</h1>
+        <p class="lead">
+          Share your thoughts and help us make your stay even better!
+        </p>
+        <a href="#feedbackForm" class="btn hero-btn btn-lg">Submit Feedback</a>
+      </div>
+    </div>
+
+    <!-- Hotel Highlights -->
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Why Guests Love GrandVoyage</h2>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <img src="/images/Private Beach.avif" class="highlight-img" />
+          <h5 class="mt-2">Private Beach</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="/images/5-Star Dining.jpeg" class="highlight-img" />
+          <h5 class="mt-2">5-Star Dining</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="/images/Infinity Pool 1.jpeg" class="highlight-img" />
+          <h5 class="mt-2">Infinity Pool</h5>
+        </div>
+        <div class="col-md-3">
+          <img src="/images/Luxury Suites.jpeg" class="highlight-img" />
+          <h5 class="mt-2">Luxury Suites</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Star Rating -->
+    <div class="container mt-5 text-center">
+      <h2 class="fw-bold">Rate Your Stay</h2>
+      <p class="text-muted">Click to rate your experience</p>
+      <div>
+        <span class="fs-1 text-warning">★ ★ ★ ★ ★</span>
+      </div>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="container mt-5" id="">
+      <div class="card shadow rounded-4 mb-5">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">
+            GrandVoyage Hotel Feedback
+          </h2>
+          <form id="feedbackForm">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  name="fullName"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="checkIn" class="form-label">Check-In Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="checkIn"
+                  name="checkIn"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="roomType" class="form-label">Room Type</label>
+              <select
+                class="form-select"
+                id="roomType"
+                name="roomType"
+                required
+              >
+                <option disabled selected>Select room type</option>
+                <option>Standard</option>
+                <option>Deluxe</option>
+                <option>Suite</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="experience" class="form-label"
+                >Overall Experience</label
+              >
+              <select
+                class="form-select"
+                id="experience"
+                name="experience"
+                required
+              >
+                <option disabled selected>Rate your experience</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="serviceQuality" class="form-label"
+                >Service Quality</label
+              >
+              <input
+                type="range"
+                class="form-range"
+                id="serviceQuality"
+                name="serviceQuality"
+                min="1"
+                max="5"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="comments" class="form-label"
+                >Additional Comments</label
+              >
+              <textarea
+                class="form-control"
+                id="comments"
+                name="comments"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+              />
+              <label class="form-check-label" for="subscribe">
+                Subscribe to GrandVoyage offers and updates
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Submit Feedback
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Testimonials Section -->
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">What Our Guests Say</h2>
+        <p class="text-muted">Real reviews from our valued guests</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial p-4">
+            <p class="mb-3">
+              "Absolutely loved my stay at GrandVoyage! Friendly staff and
+              spotless rooms!"
+            </p>
+            <h5 class="fw-bold">Sarah K.</h5>
+            <p class="text-muted">Stayed in Deluxe Room</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial p-4">
+            <p class="mb-3">
+              "Best hotel experience in years. Highly recommend the suites."
+            </p>
+            <h5 class="fw-bold">James R.</h5>
+            <p class="text-muted">Stayed in Suite</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial p-4">
+            <p class="mb-3">
+              "Perfect for family vacations. Great pool and breakfast!"
+            </p>
+            <h5 class="fw-bold">Ayesha M.</h5>
+            <p class="text-muted">Stayed in Standard Room</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map & Contact -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Find Us</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!..."
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <p>Email: contact@grandvoyage.com</p>
+          <p>Phone: +1 234 567 890</p>
+          <p>WhatsApp: +1 234 567 891</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>GrandVoyage</h5>
+            <p>
+              Experience unforgettable luxury and comfort with breathtaking
+              views and personalized services.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h6 class="fw-bold">Our Link</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="fw-bold">Our Services</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Restaurant</a></li>
+              <li><a href="#">Concierge</a></li>
+              <li><a href="#">Room Service</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6 class="fw-bold">Menu</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li class="mt-2"><button class="btn btn-sm">Book Now</button></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6 class="fw-bold">Recent News</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Awards 2025</a></li>
+              <li><a href="#">New Spa Opened</a></li>
+              <li><a href="#">Chef's Special Week</a></li>
+              <li><a href="#">Eco Update</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="text-white" />
+        <p class="text-center mb-0">
+          2025 © GrandVoyage Developed by
+          <span class="text-warning">Ali Hassan</span>
+        </p>
+      </div>
+    </footer>
+    <!-- AJAX Script -->
+    <script>
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent page reload
+
+          const formData = new FormData(this);
+          const data = {};
+          formData.forEach((value, key) => {
+            data[key] = value;
+          });
+
+          fetch("/feedback/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          })
+            .then((res) => res.json())
+            .then((response) => {
+              if (response.success) {
+                alert("Feedback submitted successfully!");
+                document.getElementById("feedbackForm").reset();
+              } else {
+                alert("Failed to submit feedback. Please try again.");
+              }
+            })
+            .catch((err) => {
+              console.error("Submission error:", err);
+              alert("Server error. Try again later.");
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

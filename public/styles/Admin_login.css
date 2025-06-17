@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  background: #f4f4f4;
+}
+.login-sec {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.login-img {
+  width: 60%;
+  background-image: url("../images/Hotel-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.login-img h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.login-img p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.login-form {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: white;
+}
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+input:focus {
+  border-color: #7a643e;
+  box-shadow: 0 0 5px #7a643e;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #7a643e;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  background: #a19151;
+}
+@media (max-width: 768px) {
+  .login-sec {
+    flex-direction: column;
+  }
+  .login-img {
+    width: 100%;
+    height: 40vh;
+  }
+  .login-form {
+    width: 100%;
+    height: 60vh;
+  }
+}

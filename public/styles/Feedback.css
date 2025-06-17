@@ -1,0 +1,60 @@
+.testimonial {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+.navbar {
+  background-color: #4b3d2b;
+  height: 80px;
+  font-size: 18px;
+}
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.highlight-img {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.highlight-img:hover {
+  transform: scale(1.05);
+}
+.hero {
+  background-color: #715e37;
+  color: #2f2519;
+}
+.hero-btn {
+  background-color: #2f2519;
+  color: white;
+}
+
+.footer {
+  background-color: #4b3d2b;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .btn {
+  background-color: #7d6846;
+  border: none;
+}
