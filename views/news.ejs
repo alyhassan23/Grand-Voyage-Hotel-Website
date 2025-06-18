@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/styles/news.css" />
+  </head>
+  <body>
+    <div class="nav_hero_section_background_img">
+      <!-- Desktop size navbar -->
+      <%- include('partials/navbar') %>
+      <div class="hero_section">
+        <div class="hero_content">
+          <h1>Latest News</h1>
+        </div>
+      </div>
+    </div>
+    <table>
+      <% for (let i = 0; i < newsItems.length; i += 3) { %>
+      <tr>
+        <% for (let j = i; j < i + 3 && j < newsItems.length; j++) { %>
+        <td>
+          <img
+            src="<%= newsItems[j].image_path %>"
+            alt="<%= newsItems[j].title %>"
+          />
+          <p class="category"><%= newsItems[j].category %></p>
+          <p class="title"><%= newsItems[j].title %></p>
+          <p class="text"><%= newsItems[j].description %></p>
+          <a class="read-more" href="#">Read More</a>
+        </td>
+        <% } %>
+      </tr>
+      <% } %>
+    </table>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>
